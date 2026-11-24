@@ -3,12 +3,552 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        
-    </style>
+    <title>Subsidy Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body{
+        background-color: #c0f4f4;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        color:black;
+    }
+
+    .thick-border {
+        border: 3px solid black;
+    }
+
+    .box-padding{
+        padding: 20px;
+    }
+
+    .box-margin {
+        margin-top:20px;
+        margin-bottom: 20px;
+    }
+    .bg-header {
+        background-color: #8bd3f4;
+    }
+    .bg-nav{
+        background-color: #f4f4c0;
+    }
+    .bg-agri{
+        background-color: #c0f4c0;
+    }
+    .bg-bis{
+        background-color: #8bc0f4;
+    }
+    .bg-health{
+        background-color: #f4c0c0;
+    }
+    .bg-drive{
+        background-color: #f4f4c0;
+    }
+    .bg-status{
+        background-color: #cabbfa;
+    }
+
+    a:link{
+        color: black;
+    }
+    a:visited{
+        color:black;
+    }
+    a:hover{
+        color: grey;
+    }
+</style>
 </head>
 <body>
-
+    <div class="container-fluid bg-header thick-border pb-3 pt-4 text-center">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-md-end text-center">
+                <h1 class="display-3 fw-bold">
+                    Subsidy-Tracker
+                </h1>
+            </div>
+            <div class="col-md-6 text-md-start text-center">
+                <h2 class="fw-bold" style="color: #ffc107;">
+                    🔍SUBSIDY
+                </h2>
+                <h3 class="fw-bold">
+                    TRACKER
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-4">
+        <div class="bg-nav thick-border rounded-pill py-2 px-4 d-flex justify-content-center gap-3 gap-md-5 mx-auto box-margin" style="max-width:800px">
+            <a href="#schemes" class="fs-4 fw-bold rounded-pill border border-dark border-2 px-4 py-1">
+                Types of scheme
+            </a>
+            <a href="#info" class="fs-4 fw-bold rounded-pill border border-dark border-2 px-4 py-1">
+                Info
+            </a>
+            <a href="#step" class="fs-4 fw-bold rounded-pill border border-dark border-2 px-4 py-1">
+                Procedure
+            </a>
+            <a href="#Help" class="fs-4 fw-bold rounded-pill border border-dark border-2 px-4 py-1">
+                Help
+            </a>
+        </div>
+    </div>
+    <div class="box-margin">
+        <h1 class="fw-bold mb-4">
+            Facing Issues?
+        </h1>
+        <p class="fs-5 fw-bold">
+            Finding and Tracking government subsidies is currently confusing and fragmented for everyday citizens.
+        </p>
+        <ul class="fs-5 fw-bold">
+            <li class="mb-3">
+                Scattered Portals: Welfare schemes are spread across dozens of websites, making eligibility hard to find.
+            </li>
+            <li class="mb-3">
+                Zero Tracking Visibility : Citizens cannot easily see where their Direct Benefit Transfer (DBT) payment is stuck.
+            </li>
+            <li class="mb-3">
+                Slow Issue Resolution: Reporting missing or delayed funds requires visiting offices and dealing with complex paperwork.
+            </li>
+        </ul>
+    <div class="box-margin mt-5">
+        <h1 class="fw-bold mb-4">
+            Why Only Subsidy Tracker?
+        </h1>
+        <p class="fs-5 fw-bold">
+            The Subsidy Tracker is a centralized platform for citizens to access and monitor their direct benefits transfers (DBT) and subsidy applications.
+        </p>
+        <p class="fs-5 fw-bold">
+            Our mission: Ensure efficiency and accountability in benefit delivery.   
+        </p>
+        <p class="fs-5 fw-bold">
+            Citizens need a single, transparent digital bridge between government welfare programs and their bank accounts.
+        </p>
+        <ul class="fs-5 fw-bold" style="list-style-type:disc;">
+            <li class="mb-3">
+                Centralized Discovery: One portal to find all eligible state and central schemes in seconds.
+            </li>
+            <li class="mb-3">
+                Real-Time Tracking: Step-by-step updates from application approval to bank deposit.
+            </li>
+            <li class="mb-3">
+                Direct Accountability: A fast online system to report and fix delayed payments without middlemen.
+            </li>
+        </ul>
+    </div>
+    <h1 class="fw-bold text-center display-4 my-5" id="schemes">
+        Types of schemes
+    </h1>
+    <div class="d-flex flex-column align-items-center gap-5">
+        <div class="w-100" style="max-width:800px;">
+            <h2 class="fw-bold text-decoration-underline mb-3">
+                1.Agriculture, Rural & Environment
+            </h2>
+            <div class="bg-agri thick-border box-padding rounded-4">
+                <p class="fs-5 fw-bold">
+                Agriculture is central to India's economy, particularly in rural areas where it enhances GDP and livelihoods. This sector employs sustainable practices such as soil conservation and promotes biodiversity through initiatives like the green, white, yellow, and blue revolutions.      
+                </p>
+                <a href="#agri-schemes" class="d-inline-block mt-3 bg-light rounded-pill px-3 py-1 fw-bold text-dark border-0">
+                    To get more information about schemes-: click here
+                </a>
+            </div> 
+        </div>
+        <div class="w-100" style="max-width:800px;">
+            <h2 class="fw-bold text-decoration-underline mb-3">
+                2.Business & Self-employed
+            </h2>
+            <div class="bg-bis thick-border box-padding rounded-4">
+                <p class="fs-5 fw-bold">
+                Government schemes for businesses and self-employed individuals provide essential startup capital, working capital, and collateral-free loans to help entrepreneurs launch and grow their ventures. Flagship initiatives like the Pradhan Mantri MUDRA Yojana (PMMY) offer micro-loans up to ₹20 lakh, while the Prime Minister's Employment Generation Programme (PMEGP)      
+                </p>
+                <a href="#bis-schemes" class="d-inline-block mt-3 bg-light rounded-pill px-3 py-1 fw-bold text-dark border-0">
+                    To get more information about schemes-: click here
+                </a>
+            </div> 
+        </div>
+        <div class="w-100" style="max-width: 800px;">
+            <h2 class="fw-bold text-decoration-underline mb-3">
+                3.Health & Wellness
+            </h2>
+            <div class="bg-health thick-border box-padding rounded-4">
+                <p class="fs-6 fw-bold">
+                    While public health is primarily a State/UT responsibility, the central government's National Health Mission (NHM)—comprising the NRHM and NUHM—supports local governments in strengthening healthcare systems to ensure equitable, affordable, and quality care for all.
+                </p>
+                <a href="#health-schemes" class="d-inline-block mt-3 bg-light rounded-pill px-3 py-1 fw-bold text-dark border-0">
+                    To get more information about schemes-: click here
+                </a>
+            </div>
+        </div>
+        <div class="w-100" style="max-width: 800px;">
+            <h2 class="fw-bold text-decoration-underline mb-3">
+                4.Driving & Transport
+            </h2>
+            <div class="bg-drive thick-border box-padding rounded-4">
+                    <p class="fs-6 fw-bold">
+                        Schemes for driving and transport businesses help entrepreneurs, drivers, and fleet operators purchase commercial vehicles, upgrade aging fleets, and manage logistics costs. In Maharashtra and across India, both central and state-level programs provide subsidized transport solutions.
+                    </p>
+                    <a href="#drive-schemes" class="d-inline-block mt-3 bg-light rounded-pill px-3 py-1 fw-bold text-dark border-0">
+                        To get more info:-click here
+                    </a>
+            </div>
+        </div>
+        <div class="w-100" style="max-width: 800px;">
+            <h2 class="fw-bold text-decoration-underline mb-3">
+                5.Housing & Local services
+            </h2>
+            <div class="bg-agri thick-border box-padding rounded-4">
+                <p class="fs-6 fw-bold">
+                    This section details diverse local services and housing insights, addressing the dynamics of India's housing market influenced by population growth, rising incomes, and rapid urbanization. It includes information on utilities like electricity and water and housing programmes.
+                </p>
+                <a href="#house-schemes" class="d-inline-block mt-3 text-white rounded-pill px-3 py-1 fw-bold border-0" style="background-color: #f46c6c;">
+                    To get more information about schemes-: click here
+                </a>
+                </div>
+            </div>
+        </div>
+        <h1 class="fw-bold mt-5 mb-4" id="step">
+            How to apply?
+        </h1>
+        <div class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="bg-status rounded-4 box-padding h-100 text-center text-md-start">
+                    <h4 class="fw-bold">
+                        📝 Active Application Status
+                    </h4>
+                    <p class="fw-bold">
+                        Enter Application ID or Aadhaar number to track your active DBT claim
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-status rounded-4 box-padding h-100 text-center text-md-start">
+                    <h4 class="fw-bold">
+                        💳 Payment History
+                    </h4>
+                    <p class="fw-bold mb-0">
+                        comprehensive list of past subsidy payments made to your registered bank account
+                    </p>
+                    <p class="fw-bold text-success">
+                        Pros:Prompt updates,accurate records
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-status rounded-4 box-padding h-100 text-center text-md-start">
+                    <h4 class="fw-bold">
+                        🔎 Scheme Eligibility Check
+                    </h4>
+                    <p class="fw-bold mb-0">
+                        Find and filter government schemes your eligible for based on your profile details
+                    </p>
+                    <p class="fw-bold text-dark">
+                        Need:correct profile,eligibilty
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-status rounded-4 box-padding h-100 text-center text-md-start">
+                    <h4 class="fw-bold">
+                        📢 Raise Grievance
+                    </h4>
+                    <p class="fw-bold mb-0">
+                        Report issues regarding non-receipt or delayed payments of subsidies
+                    </p>
+                    <p class="fw-bold text-dark">
+                        New to:Trackable tickets
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 class="fw-bold mb-4">
+            Details to enter
+        </h2>
+        <form>
+            <div class="fs-4 fw-bold mb-5">
+                <p>
+                    Name:-<input type="text" placeholder="_________________________">
+                </p>
+                <p>
+                    Application ID/Aadhar ID:-<input type="number" placeholder="_________________________">
+                </p>
+                <p>
+                    choosen Scheme/Interested:-<output type="text-success" placeholder="yourschemes" id="youschemes"></output>
+                </p>
+                <p>
+                    Fetch Eligibility check →
+                    <button class="bg-info rounded-pill px-3 py-1 border border-dark border-2">
+                        check
+                    </button>
+                </p>
+            </div>
+            <h2 class="fw-bold mb-3" id="Help">
+                Facing any Issues ?
+            </h2>
+            <div class="bg-light rounded-4 thick-border box-padding mb-3">
+                <input type="text" placeholder="Feel free to write your issue" class="fs-5 fw-bold mb-0 form-control">
+            </div>
+            <button class="btn border-dark border-2 rounded-pill fw-bold px-4 mb-5" style="background-color: #ff66cc;" type="submit">
+                Submit
+            </button>
+        </form>
+        <h3 class="fw-bold">
+            You can contact us here
+        </h3>
+        <p class="fs-5 fw-bold mb-0">
+            Email: rbuminiproject@rbunagpur.in
+        </p>
+        <p class="fs-5 fw-bold mb-5">
+            Telephone Number :9xxxxxxx7
+        </p>
+        <hr class="border border-dark border-2 my-5">
+        <h1 class="text-center fw-bold display-5 mb-5" id="info">
+            Detailed Scheme Lists
+        </h1>
+        <div class="d-flex flex-column align-items-center gap-5">
+            <div id="agri-schemes" class="w-100" style="max-width: 800px; background-color: #bbf484; padding: 40px; border-radius: 20px;">
+                <div class="thick-border rounded-pill px-4 py-2 mx-auto text-center mb-4 bg-agri" style="max-width: 600px;">
+                    <h2 class="fw-bold mb-0">
+                        Agriculture, Rural & Environment
+                        <br>
+                        List of schemes:
+                    </h2>
+                </div>
+                    <div class="thick-border rounded-4 box-padding bg-agri mb-4 fs-4 fw-bold">
+                    <a href="https://www.myscheme.gov.in/schemes/nmoen">
+                        <p>
+                            1.National Mission on Edible Oil:-Oil Palm: Nursery
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/ppe">
+                        <p>
+                            2.National Livestock Mission: Promotion of Piggery Entrepreneur
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/nswf">
+                        <p>
+                            3.National scheme of welfare of Fishermen
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/gopinath-munde-shetkari-apghat-suraksha-sanugrah-audhan-yojana">
+                        <p>
+                            4.Gopinath Munde Shetkari Apghat Suraksha Sanugrah Audhan Yojana
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/dms">
+                        <p>
+                            5.Development of Mushroom Services
+                        </p>
+                    </a>
+                </div>
+                <form>
+                    <div class="fs-4 fw-bold">
+                        <p>
+                            Want to apply ?
+                        </p>
+                        <p>
+                            Choose Required Scheme :<input type="number" placeholder="_________________________">
+                        </p>
+                        <button type="submit" class="btn bg-light rounded-pill border-0 px-4 fw-bold fs-5 text-dark">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="bis-schemes" class="w-100" style="max-width: 800px; background-color: #a4f4f4; padding: 40px; border-radius: 20px;">
+                <div class="thick-border rounded-pill px-4 py-2 mx-auto text-center mb-4 bg-bis" style="max-width: 700px;">
+                    <h2 class="fw-bold mb-0">
+                        Business & Self-employed | Category | National
+                        <br>
+                        Portal of India
+                    </h2>
+                </div>
+                <div class="thick-border rounded-4 box-padding bg-bis mb-4 fs-4 fw-bold">
+                    <a href="https://www.myscheme.gov.in/schemes/nps-tsep">
+                        <p>
+                            1.National Pension Scheme for Traders and Self-Employed Persons
+                        </p>
+                    </a>
+                    <a href="https://www.indiascienceandtechnology.gov.in/funding-opportunities/startups/promoting-innovations-individuals-startups-and-msmes-prism">
+                        <p>
+                            2.PRISM (Promoting Innovations in Individuals, Start-ups and MSMEs)
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/hi/search/category/Business%20&%20Entrepreneurship">
+                        <p>
+                            3.Pradhan Mantri Virasat Ka Samvardhan (PM VIKAS)
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/msy">
+                        <p>
+                            4.Mukhya Mantri Swarozgar Yojana
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/sesnvmly">
+                        <p>
+                            5.Nana Vyavasay Mate Loan Yojana
+                        </p>
+                    </a>
+                </div>
+                <form>
+                    <div class="fs-4 fw-bold">
+                        <p>
+                            Want to apply ?
+                        </p>
+                        <p>
+                            Choose Required Scheme :<input type="number" placeholder="_________________________">
+                        </p>
+                        <button class="btn bg-light rounded-pill border-0 px-4 fw-bold fs-5 text-dark" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="health-schemes" class="w-100" style="max-width: 800px; background-color: #ff6b6b; padding: 40px; border-radius: 20px;">
+                <div class="thick-border rounded-pill px-4 py-2 mx-auto text-center mb-4" style="background-color: #ffb3b3; max-width: 600px;">
+                    <h2 class="fw-bold mb-0">
+                        Health & Wellness schemes
+                        <br>
+                        List of schemes:
+                    </h2>
+                </div>
+                <div class="thick-border rounded-4 box-padding mb-4 fs-4 fw-bold" style="background-color: #ffcccc;">
+                    <a href="https://www.myscheme.gov.in/schemes/kisfim">
+                        <p>
+                            1.Khelo India Scheme: Fit India Movement
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/asyasm">
+                        <p>
+                            2.Ayurswasthya Yojana: AYUSH for Sports Medicine
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/ahwc">
+                        <p>
+                            3.AYUSH Health and Wellness Centre - Ayushman Bharat Yojana
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/ma">
+                        <p>
+                            4.Mukhyamantri Amrutum Yojana
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/mksybs">
+                        <p>
+                            5.Mukhyamantri Kishori Swasthya Yojna
+                        </p>
+                    </a>
+                </div>
+                <form>
+                    <div class="fs-4 fw-bold text-dark">
+                        <p>
+                            Want to apply ?
+                        </p>
+                        <p>
+                            Choose Required Scheme :<input type="number" placeholder="_________________________">
+                        </p>
+                        <button class="btn bg-light rounded-pill border-0 px-4 fw-bold fs-5 text-dark" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="drive-schemes" class="w-100" style="max-width: 800px; background-color: #ffb84d; padding: 40px; border-radius: 20px;">
+                <div class="thick-border rounded-pill px-4 py-2 mx-auto text-center mb-4 bg-drive" style="max-width: 600px;">
+                    <h2 class="fw-bold mb-0">
+                        Driving and Transport Schemes
+                        <br>
+                        List of schemes
+                    </h2>
+                </div>
+                <div class="thick-border rounded-4 box-padding bg-nav mb-4 fs-4 fw-bold">
+                    <a href="https://www.myscheme.gov.in/schemes/mvdcws-cmsesdc">
+                        <p>
+                            1.Chief Minister Self-Employment Scheme for Drivers/Conductors
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/search/category/Transport%20%26%20Infrastructure">
+                        <p>
+                            2.Development Plan: Motor Driving Training (Light & Heavy Vehicles)
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/psgbcdc">
+                        <p>
+                            3.Parivahan Scheme (GBCDC)
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/mvdcws-mda">
+                        <p>
+                            4.Motor Vehicle Driver-Conductor Welfare Scheme - Medical Assistance
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/search/category/Transport%20%26%20Infrastructure">
+                        <p>
+                            5.Prime Tourism Vehicle Scheme
+                        </p>
+                    </a>
+                </div>
+                <form>
+                    <div class="fs-4 fw-bold">
+                        <p>
+                            Want to apply ?
+                        </p>
+                        <p>
+                            Choose Required Scheme :<input type="number" placeholder="_________________________">
+                        </p>
+                        <button class="btn bg-light rounded-pill border-0 px-4 fw-bold fs-5 text-dark" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div id="house-schemes" class="w-100 mb-5" style="max-width: 800px; background-color: #bbf484; padding: 40px; border-radius: 20px;">
+                <div class="thick-border rounded-pill px-4 py-2 mx-auto text-center mb-4" style="background-color: #5cf4b4; max-width: 700px;">
+                    <h2 class="fw-bold mb-0">
+                        Housing and local Services Schemes
+                        <br>List of Schemes:
+                    </h2>
+                </div>
+                <div class="thick-border rounded-4 box-padding mb-4 fs-4 fw-bold" style="background-color: #5cf4b4;">
+                    <a href="https://www.myscheme.gov.in/schemes/pmay-g">
+                        <p>
+                            1.Pradhan Mantri Awaas Yojana - Gramin (PMAY-G)
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/rassnb">
+                        <p>
+                            2.Ramai Awas (Gharkul) Scheme for SC & Nav-Buddha (Urban and Rural)
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/namaste-ersufaf">
+                        <p>
+                            3.National Action for Mechanised Sanitation Ecosystem (NAMASTE) - Emergency Response Sanitation Unit (ERSU)
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/sagy">
+                        <p>
+                            4.Saansad Adarsh Gram Yojana (SAGY)
+                        </p>
+                    </a>
+                    <a href="https://www.myscheme.gov.in/schemes/cmhap">    
+                        <p>
+                            5.Chief Minister's Housing Assistance Programme
+                        </p>
+                    </a>
+                </div>
+                <form>
+                    <div class="fs-4 fw-bold">
+                        <p>
+                            Want to apply ?
+                        </p>
+                        <p>
+                            Choose Required Scheme :<input type="number" placeholder="_________________________" class="form-control" id="yourschemes" value>
+                        </p>
+                        <button class="btn bg-light rounded-pill border-0 px-4 fw-bold fs-5 text-dark" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
